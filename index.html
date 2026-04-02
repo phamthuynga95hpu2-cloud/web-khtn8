@@ -9,23 +9,23 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #f0f4f8;
+    background: #f5f7fa;
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 /* MENU */
 nav {
-    background: white;
     display: flex;
     justify-content: center;
     gap: 20px;
+    background: white;
     padding: 15px;
     position: sticky;
     top: 0;
@@ -34,33 +34,48 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
     font-weight: bold;
+    color: #333;
 }
 
-/* SECTION */
+/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
+/* CARD */
 .card {
     background: white;
-    margin-bottom: 20px;
     padding: 25px;
     border-radius: 15px;
+    margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #4facfe;
+    color: #667eea;
 }
 
 .highlight {
-    background: #e3f2fd;
+    background: #eef2ff;
     padding: 10px;
-    border-left: 5px solid #4facfe;
+    border-left: 5px solid #667eea;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* BOX */
+.box {
+    background: #f1f5f9;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* TABLE */
@@ -69,13 +84,13 @@ table {
     border-collapse: collapse;
 }
 
-td, th {
-    border: 1px solid #ddd;
+th, td {
     padding: 10px;
+    border: 1px solid #ddd;
 }
 
 th {
-    background: #4facfe;
+    background: #667eea;
     color: white;
 }
 
@@ -83,7 +98,7 @@ th {
 button {
     padding: 10px 15px;
     border: none;
-    background: #4facfe;
+    background: #667eea;
     color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -91,10 +106,10 @@ button {
 
 /* FOOTER */
 footer {
+    background: #667eea;
+    color: white;
     text-align: center;
     padding: 20px;
-    background: #4facfe;
-    color: white;
 }
 </style>
 </head>
@@ -104,57 +119,82 @@ footer {
 <header>
     <h1>BÁO CÁO CHUYÊN ĐỀ</h1>
     <h2>KHTN 8 - Chất và sự biến đổi của chất</h2>
-    <p>THCS Lê Hồng Phong - 2026</p>
+    <p>Phát triển năng lực sáng tạo nội dung số</p>
 </header>
 
 <nav>
     <a href="#mucdau">Mở đầu</a>
-    <a href="#noidung">Nội dung</a>
+    <a href="#lyluan">Lý luận</a>
+    <a href="#thuctrang">Thực trạng</a>
     <a href="#giaiphap">Giải pháp</a>
     <a href="#ketluan">Kết luận</a>
 </nav>
 
 <div class="container">
 
+<!-- MỞ ĐẦU -->
 <div class="card" id="mucdau">
 <h2>PHẦN I. MỞ ĐẦU</h2>
 
 <div class="highlight">
-Lý do: Đổi mới giáo dục và phát triển năng lực số cho học sinh theo CTGDPT 2018.
+Đổi mới phương pháp dạy học nhằm phát triển năng lực số cho học sinh theo CTGDPT 2018.
 </div>
 
-<p><b>Mục tiêu:</b></p>
 <ul>
 <li>Phát triển năng lực sáng tạo nội dung số</li>
 <li>Ứng dụng công cụ số trong dạy học</li>
+<li>Tăng hứng thú học tập</li>
 </ul>
+</div>
+
+<!-- LÝ LUẬN -->
+<div class="card" id="lyluan">
+<h2>PHẦN II. CƠ SỞ LÝ LUẬN</h2>
+
+<div class="grid">
+<div class="box">Năng lực số: khả năng sử dụng công nghệ</div>
+<div class="box">Sáng tạo nội dung số</div>
+<div class="box">Ứng dụng trong dạy học</div>
+</div>
 
 </div>
 
-<div class="card" id="noidung">
-<h2>PHẦN II. NỘI DUNG</h2>
+<!-- THỰC TRẠNG -->
+<div class="card" id="thuctrang">
+<h2>PHẦN III. THỰC TRẠNG</h2>
 
-<h3>Cơ sở lý luận</h3>
-<p>Năng lực số là khả năng sử dụng công nghệ để giải quyết vấn đề.</p>
-
-<h3>Thực trạng</h3>
+<div class="grid">
+<div class="box">
+<b>Thuận lợi</b>
 <ul>
-<li>Thuận lợi: Có thiết bị, HS nhanh nhạy</li>
-<li>Khó khăn: Thiếu đồng đều, internet yếu</li>
+<li>HS nhanh nhạy công nghệ</li>
+<li>Có thiết bị</li>
 </ul>
+</div>
+
+<div class="box">
+<b>Khó khăn</b>
+<ul>
+<li>Thiết bị chưa đồng đều</li>
+<li>Mạng yếu</li>
+<li>HS chưa chủ động</li>
+</ul>
+</div>
+</div>
 
 </div>
 
+<!-- GIẢI PHÁP -->
 <div class="card" id="giaiphap">
-<h2>GIẢI PHÁP</h2>
+<h2>PHẦN IV. GIẢI PHÁP</h2>
 
-<h3>Giải pháp 1</h3>
-<p>Phát triển năng lực số GV & HS</p>
+<h3>1. Phát triển năng lực số</h3>
+<p>Hướng dẫn HS sử dụng công cụ số tạo sản phẩm</p>
 
-<h3>Giải pháp 2</h3>
-<p>Trực quan hóa kiến thức bằng công cụ số</p>
+<h3>2. Trực quan hóa kiến thức</h3>
+<p>Sử dụng sơ đồ, video, infographic</p>
 
-<h3>Bảng hoạt động</h3>
+<h3>Bảng áp dụng</h3>
 
 <table>
 <tr>
@@ -165,41 +205,44 @@ Lý do: Đổi mới giáo dục và phát triển năng lực số cho học si
 
 <tr>
 <td>Biến đổi chất</td>
-<td>So sánh vật lí - hóa học</td>
-<td>Canva, PowerPoint</td>
+<td>So sánh hiện tượng</td>
+<td>Canva</td>
 </tr>
 
 <tr>
 <td>Định luật</td>
-<td>Sơ đồ hóa kiến thức</td>
+<td>Sơ đồ hóa</td>
 <td>Mindmap</td>
 </tr>
 
 <tr>
 <td>Nồng độ</td>
 <td>Làm video</td>
-<td>Canva, CapCut</td>
+<td>CapCut</td>
 </tr>
 
 </table>
 
 </div>
 
+<!-- KẾT LUẬN -->
 <div class="card" id="ketluan">
-<h2>KẾT LUẬN</h2>
+<h2>PHẦN V. KẾT LUẬN</h2>
 
 <p>
-Ứng dụng công cụ số giúp học sinh phát triển năng lực sáng tạo, tăng hứng thú học tập và nâng cao hiệu quả dạy học.
+Ứng dụng công cụ số giúp nâng cao hiệu quả dạy học và phát triển năng lực học sinh.
 </p>
 
-<button onclick="alert('Cảm ơn bạn đã xem!')">Xem thêm</button>
+<button onclick="alert('Bạn có thể mở rộng thêm phần trắc nghiệm!')">
+Khám phá thêm
+</button>
 
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 - Báo cáo chuyên đề KHTN 8</p>
+<p>© 2026 - Báo cáo KHTN 8</p>
 </footer>
 
 </body>
